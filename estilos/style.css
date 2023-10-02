@@ -1,1 +1,116 @@
 @charset "UFT-8";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Seoge Ui', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica neue', sans-serif ;
+    box-sizing: border-box;
+}
+html, body{
+    background-color: #5f2cB2;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.568);
+
+    transition:  width .3s, heith .3s;
+    transition-timing-function: ease;
+}
+section#login > div#imagem {
+    display: block;
+    background: #5f2cB2 url(../imagens/istockphoto-533437662-612x612.jpg);
+    height: 200px;
+    background-size: cover;
+
+}
+
+section#login > div#formulario{
+    padding: 10px;
+    display: block;
+
+}
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+div#formulario > p{
+    font-size: 0.8em;
+}
+input[type=submit] {
+    margin-top: 10px;
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+input[type=submit]:hover {
+    background-color: #3c8380;
+}
+a.bottom{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: #3d8885;
+    border: 1px solid #49a09d;
+    border-radius: 5px;
+    text-decoration: none;
+}
+a.bottom:hover{
+    background-color: #61ccc8;
+}
+a.bottom > span {
+    font-size: 0.8em;
+}
+div.campo{
+    background-color: #5f2cB2;
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+label {
+    display: none;
+}
+form > div.campo > span {
+    color: white;
+    
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input.log{
+    background-color: #49a09d;
+    border: 2px solid #5f2cB2;
+    height: 40px;
+    font-size: 1em;
+    border-radius: 5px;
+    width: calc(100% - 45px);
+    transform: translateY(-12px);
+}
